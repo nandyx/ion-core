@@ -13,7 +13,6 @@ export class AuthGuard implements CanLoad {
       return true;
     } else {
       this.router.navigateByUrl('/', {
-        skipLocationChange: true,
         replaceUrl: true,
       });
     }
