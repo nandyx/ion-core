@@ -1,9 +1,4 @@
-import {
-  HttpClient,
-  HttpErrorResponse,
-  HttpHeaders,
-  HttpParams,
-} from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 
 export abstract class IRepository {
@@ -29,37 +24,31 @@ export abstract class IRepository {
 
   protected get<T>(apiUrl: string) {
     return this.http.get<T>(apiUrl).pipe(
-      map((response: any) => {
-        if (response.status === 'success') {
-          return response.data;
-        } else {
-          throw new HttpErrorResponse({ error: response });
-        }
-      })
+      map(
+        (response: any) =>
+          // TODO: add logic here!
+          response
+      )
     );
   }
 
   protected post<T>(apiUrl: string, params?: HttpParams) {
     return this.http.post<T>(apiUrl, params.toString(), this.header).pipe(
-      map((response: any) => {
-        if (response.status === 'success') {
-          return response.data;
-        } else {
-          throw new HttpErrorResponse({ error: response });
-        }
-      })
+      map(
+        (response: any) =>
+          // TODO: add logic here!
+          response
+      )
     );
   }
 
   protected delete<T>(apiUrl: string) {
     return this.http.delete<T>(apiUrl).pipe(
-      map((response: any) => {
-        if (response.status === 'success') {
-          return response.data;
-        } else {
-          throw new HttpErrorResponse({ error: response });
-        }
-      })
+      map(
+        (response: any) =>
+          // TODO: add logic here!
+          response
+      )
     );
   }
 }
