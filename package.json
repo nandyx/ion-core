@@ -1,15 +1,32 @@
 {
   "name": "ion-core",
   "version": "0.0.1",
-  "author": "Ionic Framework",
+  "author": "Nandy Legorreta",
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ionic serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "copy": "ionic build --configuration=staging && npx cap copy",
+    "sync": "ionic build --configuration=staging && npx cap sync",
+    "open:apk": "npx cap open android",
+    "open:ios": "npx cap open ios",
+    "release:apk": "ionic build android --prod --release",
+    "release": "ionic build --prod && npx cap sync",
+    "serve:staging": "ionic serve --configuration staging",
+    "serve:prod": "ionic serve --configuration production",
+    "build:prod": "ionic build --prod",
+    "build:android:staging": "ionic build android --configuration=staging",
+    "build:android:prod": "ionic build android --configuration=production",
+    "build:ios:staging": "ionic build ios --configuration=staging",
+    "build:ios:prod": "ionic build ios --configuration=production",
+    "debug:apk": "ionic capacitor run android --configuration staging -l --external",
+    "debug:ios": "ionic capacitor run ios --configuration staging -l --external",
+    "check": "ng lint && ng test --watch=false",
+    "cc": "ng test --codeCoverage --watch=false"
   },
   "private": true,
   "dependencies": {
@@ -21,6 +38,9 @@
     "@angular/router": "~11.2.0",
     "@capacitor/core": "2.4.7",
     "@ionic/angular": "^5.5.2",
+    "@ngrx/effects": "^11.1.1",
+    "@ngrx/store": "^11.1.1",
+    "@ngrx/store-devtools": "^11.1.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
@@ -58,5 +78,16 @@
     "ts-node": "~8.3.0",
     "typescript": "~4.0.2"
   },
+  "keywords": [
+    "ionic",
+    "angular",
+    "ngrx",
+    "capacitorjs",
+    "ionic architecture",
+    "ionic setup",
+    "rxjs",
+    "capacitor",
+    "cross-platform"
+  ],
   "description": "An Ionic project"
 }

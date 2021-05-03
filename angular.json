@@ -58,6 +58,14 @@
                 }
               ]
             },
+            "staging": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.staging.ts"
+                }
+              ]
+            },
             "ci": {
               "progress": false
             }
@@ -71,6 +79,9 @@
           "configurations": {
             "production": {
               "browserTarget": "app:build:production"
+            },
+            "staging": {
+              "browserTarget": "app:build:staging"
             },
             "ci": {
               "progress": false
@@ -131,6 +142,9 @@
             "production": {
               "devServerTarget": "app:serve:production"
             },
+            "staging": {
+              "devServerTarget": "app:serve:staging"
+            },
             "ci": {
               "devServerTarget": "app:serve:ci"
             }
@@ -144,6 +158,9 @@
           "configurations": {
             "production": {
               "browserTarget": "app:build:production"
+            },
+            "staging": {
+              "browserTarget": "app:build:staging"
             }
           }
         },
@@ -157,6 +174,10 @@
             "production": {
               "cordovaBuildTarget": "app:ionic-cordova-build:production",
               "devServerTarget": "app:serve:production"
+            },
+            "staging": {
+              "cordovaBuildTarget": "app:ionic-cordova-build:staging",
+              "devServerTarget": "app:serve:staging"
             }
           }
         }
@@ -164,6 +185,7 @@
     }
   },
   "cli": {
+    "analytics": false,
     "defaultCollection": "@ionic/angular-toolkit"
   },
   "schematics": {
