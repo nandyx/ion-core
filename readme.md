@@ -57,3 +57,12 @@ ionic Architecture guide
 ## State management
 
 ![](https://i.imgur.com/GbIFBh8.jpg)
+
+## Next steps
+
+
+1. [Splash screen & App Icon Config](https://github.com/nandyx/ion-core/wiki/Splash-screen-&-App-Icon-Config)
+2. [Using Push Notifications with Firebase](https://capacitorjs.com/docs/guides/push-notifications-firebase)
+3. [How use Firebase Analytics](https://devdactic.com/firebase-analytics-ionic/)
+
+
