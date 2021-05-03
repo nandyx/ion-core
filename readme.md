@@ -13,13 +13,15 @@ ionic Architecture guide
 |    |        |       ├──screens/
 |    |        |       └──components/
 |    |        └──...
-|    ├── helpers/
+|    ├── utils/
 |    ├── security/
 |    |       feature.guard.ts
 |    |       feature.interceptor.ts
 |    |       ...
 |    └── components/
-├── theme
+├── theme/
+|
+├── helpers
 |
 ├── environments
 |        environment.prod.ts
@@ -41,7 +43,7 @@ ionic Architecture guide
 |    ├── effects/
 |    ├── selectors/
 |    ├── reducers/
-|    └── facedes/
+|    └── facades/
 |
 ├── test
 |
@@ -52,7 +54,8 @@ ionic Architecture guide
 
 ## Architecture
 
-![](https://i.imgur.com/WNhxnvv.jpg)
+![](https://i.imgur.com/cxugZXU.png)
+
 
 ## State management
 
@@ -64,5 +67,4 @@ ionic Architecture guide
 1. [Splash screen & App Icon Config](https://github.com/nandyx/ion-core/wiki/Splash-screen-&-App-Icon-Config)
 2. [Using Push Notifications with Firebase](https://capacitorjs.com/docs/guides/push-notifications-firebase)
 3. [How use Firebase Analytics](https://devdactic.com/firebase-analytics-ionic/)
-
-
+4. [Github action workflow:UAT Android](https://github.com/nandyx/ion-core/wiki/Github-action-Workflow:-UAT-Android)

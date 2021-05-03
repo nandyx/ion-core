@@ -4,7 +4,7 @@ import { Plugins } from '@capacitor/core';
 const { Storage: navStorage } = Plugins;
 
 @Injectable({ providedIn: 'root' })
-export class Storage {
+export class StorageHelper {
   constructor() {}
 
   async getObject<T>(key: string): Promise<T> {
