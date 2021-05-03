@@ -81,7 +81,7 @@
               "browserTarget": "app:build:production"
             },
             "staging": {
-              "browserTarget": "your-project-name:build:staging"
+              "browserTarget": "app:build:staging"
             },
             "ci": {
               "progress": false
