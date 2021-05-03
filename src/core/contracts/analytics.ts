@@ -2,7 +2,7 @@ import { Capacitor, Plugins } from '@capacitor/core';
 // eslint-disable-next-line @typescript-eslint/naming-convention
 const { FirebaseAnalytics } = Plugins;
 
-export abstract class Analytics {
+export abstract class IAnalytics {
   /**
    * Platform: Android/iOS
    * Sets the current screen name, which specifies the current visual context in your app.
