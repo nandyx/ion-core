@@ -1,4 +1,4 @@
-export enum StorageItems {
+export const enum StorageItems {
   fbToken = 'fireToken',
   uuid = 'uuid',
   isAuthenticated = 'isAuthenticated',
