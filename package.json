@@ -26,7 +26,8 @@
     "debug:apk": "ionic capacitor run android --configuration staging -l --external",
     "debug:ios": "ionic capacitor run ios --configuration staging -l --external",
     "check": "ng lint && ng test --watch=false",
-    "cc": "ng test --codeCoverage --watch=false"
+    "cc": "ng test --codeCoverage --watch=false",
+    "analize": "ng build --statsJson=true && npx webpack-bundle-analyzer ./www/stats.json"
   },
   "private": true,
   "dependencies": {
